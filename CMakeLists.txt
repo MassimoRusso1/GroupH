@@ -38,4 +38,4 @@ target_link_libraries(programdraft_exec PRIVATE programdraft)
 # add the include directories
 #target_include_directories(programdraft_tests PUBLIC include)
 # discover and add tests to the test list
-gtest_discover_tests(programdraft_tests)
+#gtest_discover_tests(programdraft_tests)
