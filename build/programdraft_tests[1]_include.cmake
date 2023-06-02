@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/GroupH/build/programdraft_tests[1]_tests.cmake")
+  include("/workspaces/GroupH/build/programdraft_tests[1]_tests.cmake")
+else()
+  add_test(programdraft_tests_NOT_BUILT programdraft_tests_NOT_BUILT)
+endif()
