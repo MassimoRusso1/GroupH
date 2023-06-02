@@ -16,13 +16,15 @@ private:
     std::string name_;
     std::string alias_;
 };
-class SeniorDeveloper
+
+class SeniorDeveloper : public Developer
 {
 public:
     SeniorDeveloper(const std::string& name, const std::string& alias);
     void solve_problem() const override;
 };
-class JuniorDeveloper
+
+class JuniorDeveloper : public Developer
 {
 public:
     JuniorDeveloper(const std::string& name, const std::string& alias);
