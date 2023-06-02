@@ -36,6 +36,8 @@ void JuniorDeveloper::solve_problem() const
 auto operator<<(std::ostream& out, const Developer& dev) -> std::ostream&
 {
     out <<"Name: " <<dev.get_name()<< "\n"
+    << "Alias: " <<dev.get_alias();
+    return out;
 }
 
 
