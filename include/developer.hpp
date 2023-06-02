@@ -2,16 +2,19 @@
 #define DEVELOPER_HPP
 
 #include<string>
-class developer
+class Developer
 {
 public:
-    developer(const std::string& name, const std::string& alias);
+    Developer(const std::string& name, const std::string& alias);
     virtual void solve_problem();
-public:
+    auto get_name() const -> std::string;
+    auto get_alias() const -> std::string;
+
+protected:
     static void drink_coffee();
 private:
-    std::string name;
-    std::string alias;
+    std::string name_;
+    std::string alias_;
 };
 class SeniorDeveloper
 {
