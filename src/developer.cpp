@@ -21,15 +21,15 @@ void Developer::drink_coffee()
 
 void SeniorDeveloper::solve_problem() const
 {
-    std::cout <<*this << std::endl;
-    std::cout << "That was sooo easy!!!"
+    std::cout << *this << std::endl;
+    std::cout << "That was sooo easy!!!"<<std::endl;
     drink_coffee();
 }
 
 void JuniorDeveloper::solve_problem() const
 {
-    std::cout <<*this << std::endl;
-    std::cout << "I nearly died!!!"
+    std::cout << *this << std::endl;
+    std::cout << "I nearly died!!!"<<std::endl;
     drink_coffee();
 }
 

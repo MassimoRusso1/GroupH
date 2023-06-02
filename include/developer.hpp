@@ -10,6 +10,8 @@ public:
     auto get_name() const -> std::string;
     auto get_alias() const -> std::string;
 
+    virtual void solve_problem() const = 0;
+
 protected:
     static void drink_coffee();
 private:
