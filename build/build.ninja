@@ -41,36 +41,36 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /workspaces/GroupH/build/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target programdraft
+# Object build statements for STATIC_LIBRARY target programdraft_lib
 
 
 #############################################
-# Order-only phony target for programdraft
+# Order-only phony target for programdraft_lib
 
-build cmake_object_order_depends_target_programdraft: phony || CMakeFiles/programdraft.dir
+build cmake_object_order_depends_target_programdraft_lib: phony || CMakeFiles/programdraft_lib.dir
 
-build CMakeFiles/programdraft.dir/src/developer.cpp.o: CXX_COMPILER__programdraft_unscanned_Debug /workspaces/GroupH/src/developer.cpp || cmake_object_order_depends_target_programdraft
-  DEP_FILE = CMakeFiles/programdraft.dir/src/developer.cpp.o.d
+build CMakeFiles/programdraft_lib.dir/src/developer.cpp.o: CXX_COMPILER__programdraft_lib_unscanned_Debug /workspaces/GroupH/src/developer.cpp || cmake_object_order_depends_target_programdraft_lib
+  DEP_FILE = CMakeFiles/programdraft_lib.dir/src/developer.cpp.o.d
   FLAGS = -g -std=gnu++14 -Wall -Wextra -pedantic -O0
   INCLUDES = -I/workspaces/GroupH/include
-  OBJECT_DIR = CMakeFiles/programdraft.dir
-  OBJECT_FILE_DIR = CMakeFiles/programdraft.dir/src
+  OBJECT_DIR = CMakeFiles/programdraft_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/programdraft_lib.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target programdraft
+# Link build statements for STATIC_LIBRARY target programdraft_lib
 
 
 #############################################
-# Link the static library libprogramdraft.a
+# Link the static library libprogramdraft_lib.a
 
-build libprogramdraft.a: CXX_STATIC_LIBRARY_LINKER__programdraft_Debug CMakeFiles/programdraft.dir/src/developer.cpp.o
+build libprogramdraft_lib.a: CXX_STATIC_LIBRARY_LINKER__programdraft_lib_Debug CMakeFiles/programdraft_lib.dir/src/developer.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/programdraft.dir
+  OBJECT_DIR = CMakeFiles/programdraft_lib.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libprogramdraft.a
-  TARGET_PDB = programdraft.a.dbg
+  TARGET_FILE = libprogramdraft_lib.a
+  TARGET_PDB = programdraft_lib.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target programdraft_exec
@@ -79,7 +79,7 @@ build libprogramdraft.a: CXX_STATIC_LIBRARY_LINKER__programdraft_Debug CMakeFile
 #############################################
 # Order-only phony target for programdraft_exec
 
-build cmake_object_order_depends_target_programdraft_exec: phony || cmake_object_order_depends_target_programdraft
+build cmake_object_order_depends_target_programdraft_exec: phony || cmake_object_order_depends_target_programdraft_lib
 
 build CMakeFiles/programdraft_exec.dir/src/main.cpp.o: CXX_COMPILER__programdraft_exec_unscanned_Debug /workspaces/GroupH/src/main.cpp || cmake_object_order_depends_target_programdraft_exec
   DEP_FILE = CMakeFiles/programdraft_exec.dir/src/main.cpp.o.d
@@ -96,9 +96,9 @@ build CMakeFiles/programdraft_exec.dir/src/main.cpp.o: CXX_COMPILER__programdraf
 #############################################
 # Link the executable programdraft_exec
 
-build programdraft_exec: CXX_EXECUTABLE_LINKER__programdraft_exec_Debug CMakeFiles/programdraft_exec.dir/src/main.cpp.o | libprogramdraft.a || libprogramdraft.a
+build programdraft_exec: CXX_EXECUTABLE_LINKER__programdraft_exec_Debug CMakeFiles/programdraft_exec.dir/src/main.cpp.o | libprogramdraft_lib.a || libprogramdraft_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = libprogramdraft.a
+  LINK_LIBRARIES = libprogramdraft_lib.a
   OBJECT_DIR = CMakeFiles/programdraft_exec.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -131,7 +131,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build programdraft: phony libprogramdraft.a
+build programdraft_lib: phony libprogramdraft_lib.a
 
 # =============================================================================
 # Folder targets.
@@ -141,7 +141,7 @@ build programdraft: phony libprogramdraft.a
 #############################################
 # Folder: /workspaces/GroupH/build
 
-build all: phony libprogramdraft.a programdraft_exec
+build all: phony libprogramdraft_lib.a programdraft_exec
 
 # =============================================================================
 # Built-in targets

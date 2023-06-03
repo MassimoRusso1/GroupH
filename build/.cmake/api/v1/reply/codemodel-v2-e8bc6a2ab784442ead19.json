@@ -40,16 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "programdraft::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-programdraft-Debug-870b20eda057add15a54.json",
-					"name" : "programdraft",
+					"id" : "programdraft_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-programdraft_exec-Debug-8fb70977c4176a5ce049.json",
+					"name" : "programdraft_exec",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "programdraft_exec::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-programdraft_exec-Debug-a02042e50dc4da5781b3.json",
-					"name" : "programdraft_exec",
+					"id" : "programdraft_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-programdraft_lib-Debug-af56cc55e73e5f611fe8.json",
+					"name" : "programdraft_lib",
 					"projectIndex" : 0
 				}
 			]

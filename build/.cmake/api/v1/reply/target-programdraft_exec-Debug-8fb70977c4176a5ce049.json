@@ -101,7 +101,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "programdraft::@6890427a1f51a3e7e1df"
+			"id" : "programdraft_lib::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "programdraft_exec::@6890427a1f51a3e7e1df",
@@ -119,7 +119,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "libprogramdraft.a",
+				"fragment" : "libprogramdraft_lib.a",
 				"role" : "libraries"
 			}
 		],

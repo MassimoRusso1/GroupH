@@ -12,9 +12,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -pedantic -O0)
 
 # add a library for your student structure
-add_library(programdraft src/developer.cpp)
+add_library(programdraft_lib src/developer.cpp)
 # add the includes to the library
-target_include_directories(programdraft PUBLIC include)
+target_include_directories(programdraft_lib PUBLIC include)
 
 # add an executabel and assign files to it
 add_executable(programdraft_exec src/main.cpp)
@@ -22,7 +22,7 @@ add_executable(programdraft_exec src/main.cpp)
 # add include directories to executable
 target_include_directories(programdraft_exec PRIVATE include)
 # link your libraries
-target_link_libraries(programdraft_exec PRIVATE programdraft)
+target_link_libraries(programdraft_exec PRIVATE programdraft_lib)
 
 #enable_testing()
 # check if we have gtest

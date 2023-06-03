@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libprogramdraft.a"
+			"path" : "libprogramdraft_lib.a"
 		}
 	],
 	"backtrace" : 1,
@@ -91,9 +91,9 @@
 			]
 		}
 	],
-	"id" : "programdraft::@6890427a1f51a3e7e1df",
-	"name" : "programdraft",
-	"nameOnDisk" : "libprogramdraft.a",
+	"id" : "programdraft_lib::@6890427a1f51a3e7e1df",
+	"name" : "programdraft_lib",
+	"nameOnDisk" : "libprogramdraft_lib.a",
 	"paths" : 
 	{
 		"build" : ".",
