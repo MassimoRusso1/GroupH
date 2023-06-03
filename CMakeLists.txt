@@ -24,18 +24,18 @@ target_include_directories(programdraft_exec PRIVATE include)
 # link your libraries
 target_link_libraries(programdraft_exec PRIVATE programdraft_lib)
 
-#enable_testing()
+enable_testing()
 # check if we have gtest
-#find_package(GTest REQUIRED)
+find_package(GTest REQUIRED)
 # include the gtest CMake stuff
-#include(GoogleTest)
+include(GoogleTest)
 # create a test executable
-#add_executable(programdraft_tests test/test_developer.cpp)
+add_executable(programdraft_tests test/test_developer.cpp)
 # link the gtest libraries
-#target_link_libraries(programdraft_tests PRIVATE GTest::GTest GTest::Main)
+target_link_libraries(programdraft_tests PRIVATE GTest::GTest GTest::Main)
 # link the library we want to test
-#target_link_libraries(programdraft_tests PRIVATE programdraft)
+target_link_libraries(programdraft_tests PRIVATE programdraft_lib)
 # add the include directories
-#target_include_directories(programdraft_tests PUBLIC include)
+target_include_directories(programdraft_tests PUBLIC include)
 # discover and add tests to the test list
-#gtest_discover_tests(programdraft_tests)
+gtest_discover_tests(programdraft_tests)
