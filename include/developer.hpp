@@ -2,6 +2,7 @@
 #define DEVELOPER_HPP
 
 #include <string>
+
 class Developer
 {
    public:
@@ -31,4 +32,5 @@ class JuniorDeveloper : public Developer
     JuniorDeveloper(const std::string& name, const std::string& alias);
     void solve_problem() const override;
 };
+
 #endif

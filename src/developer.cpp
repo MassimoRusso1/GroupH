@@ -7,6 +7,16 @@
 Developer::Developer(const std::string& name, const std::string& alias) : name_{name}, alias_{alias}
 {
 }
+auto Developer::get_name() const -> std::string
+{
+    return name_;
+}
+
+
+auto Developer::get_alias() const -> std::string
+{
+    return alias_;
+}
 
 SeniorDeveloper::SeniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
 {
@@ -15,6 +25,8 @@ SeniorDeveloper::SeniorDeveloper(const std::string& name, const std::string& ali
 JuniorDeveloper::JuniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
 {
 }
+
+
 auto operator<<(std::ostream& out, const Developer& dev) -> std::ostream&
 {
     out << "Name: " << dev.get_name() << "\n"
