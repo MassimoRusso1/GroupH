@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # add some compile options
-add_compile_options(-Wall -Wextra -pedantic -O0)
+add_compile_options(-Wall -Wextra -pedantic)
 
 # add a library for your student structure
 add_library(programdraft_lib src/developer.cpp)
@@ -20,7 +20,7 @@ target_include_directories(programdraft_lib PUBLIC include)
 add_executable(programdraft_exec src/main.cpp)
 
 # add include directories to executable
-target_include_directories(programdraft_exec PRIVATE include)
+target_include_directories(programdraft_exec PUBLIC include)
 # link your libraries
 target_link_libraries(programdraft_exec PRIVATE programdraft_lib)
 
