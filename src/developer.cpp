@@ -1,36 +1,21 @@
-#include "developer.hpp"
-
+#include <developer.hpp>
 #include <iostream>
 #include <string>
 
-
-Developer::Developer(const std::string& name, const std::string& alias) : name_{name}, alias_{alias}
-{
-}
 auto Developer::get_name() const -> std::string
 {
     return name_;
 }
-
 
 auto Developer::get_alias() const -> std::string
 {
     return alias_;
 }
 
-SeniorDeveloper::SeniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
+auto operator<<(std::ostream& out, const Developer& print_dev) -> std::ostream&
 {
-}
-
-JuniorDeveloper::JuniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
-{
-}
-
-
-auto operator<<(std::ostream& out, const Developer& dev) -> std::ostream&
-{
-    out << "Name: " << dev.get_name() << "\n"
-        << "Alias: " << dev.get_alias();
+    out << "Name: " << print_dev.get_name() << "\n"
+        << "Alias: " << print_dev.get_alias();
     return out;
 }
 
@@ -49,7 +34,16 @@ void SeniorDeveloper::solve_problem() const
 void JuniorDeveloper::solve_problem() const
 {
     std::cout << *this << std::endl;
-    std::cout << "I nearly died!!!" << std::endl;
+    std::cout << "I nearly died!!! \n That was difficult" << std::endl;
     drink_coffee();
 }
+Developer::Developer(const std::string& name, const std::string& alias) : name_{std::move(name)}, alias_{std::move(alias)}
+{
+}
+SeniorDeveloper::SeniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
+{
+}
 
+JuniorDeveloper::JuniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
+{
+}
