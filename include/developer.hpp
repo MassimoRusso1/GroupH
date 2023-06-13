@@ -5,18 +5,17 @@
 
 class Developer
 {
-   public:
-    Developer(const std::string& name, const std::string& alias);
-    
-    auto get_name() const -> std::string;
-    auto get_alias() const -> std::string;
-    virtual void solve_problem() const=0;
-   protected:
-    static void drink_coffee();
-
    private:
     std::string name_;
     std::string alias_;
+
+   public:
+    Developer(const std::string& name, const std::string& alias);
+
+    auto get_name() const -> std::string;
+    auto get_alias() const -> std::string;
+    virtual void solve_problem() const = 0;
+    static void drink_coffee();
 };
 
 class SeniorDeveloper : public Developer
