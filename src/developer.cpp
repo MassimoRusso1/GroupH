@@ -34,7 +34,7 @@ void SeniorDeveloper::solve_problem() const
 void JuniorDeveloper::solve_problem() const
 {
     std::cout << *this << std::endl;
-    std::cout << "I nearly died!!! \n That was difficult" << std::endl;
+    std::cout << "I nearly died!!! \nThat was difficult" << std::endl;
     drink_coffee();
 }
 Developer::Developer(const std::string& name, const std::string& alias) : name_{std::move(name)}, alias_{std::move(alias)}
