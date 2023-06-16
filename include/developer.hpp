@@ -1,5 +1,6 @@
-#ifndef DEVELOPER_HPP
-#define DEVELOPER_HPP
+//include guards construction
+#ifndef DEVELOPER_HPP_F89234E9548F489400348908945G
+#define DEVELOPER_HPP_F89234E9548F489400348908945G
 #include <string>
 
 //Define the Developer class
