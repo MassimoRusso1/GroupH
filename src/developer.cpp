@@ -39,7 +39,7 @@ void JuniorDeveloper::solve_problem() const
 }
 
 // Constructor for Developer class
-Developer::Developer(const std::string& name, const std::string& alias) : name_{std::move(name)}, alias_{std::move(alias)}
+Developer::Developer(std::string name, std::string alias) : name_{std::move(name)}, alias_{std::move(alias)}
 {
 }
 

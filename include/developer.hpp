@@ -10,7 +10,7 @@ class Developer
     std::string alias_;
 
    public:
-    Developer(const std::string& name, const std::string& alias);
+    Developer(std::string name, std::string alias);
 
     auto get_name() const -> std::string;
     auto get_alias() const -> std::string;
