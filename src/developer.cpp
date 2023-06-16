@@ -37,13 +37,18 @@ void JuniorDeveloper::solve_problem() const
     std::cout << "I nearly died!!! \nThat was difficult" << std::endl;
     drink_coffee();
 }
+
+// Constructor for Developer class
 Developer::Developer(const std::string& name, const std::string& alias) : name_{std::move(name)}, alias_{std::move(alias)}
 {
 }
+
+// Constructor for SeniorDeveloper class, derived from Developer
 SeniorDeveloper::SeniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
 {
 }
 
+// Constructor for JuniorDeveloper class, derived from Developer
 JuniorDeveloper::JuniorDeveloper(const std::string& name, const std::string& alias) : Developer(name, alias)
 {
 }
